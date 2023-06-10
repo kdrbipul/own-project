@@ -1,0 +1,14 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background:#0c1022;
+}
+.underline{
+    height:3px;
+    background-color:rgba(255, 255, 255, 0.384);
+    margin:0 auto;
+    border:1px solid gray;
+}
