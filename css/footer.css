@@ -37,3 +37,31 @@
     pointer-events:auto;
     opacity:1;
 }
+
+
+/* responsive part start here */
+@media(max-width:480px){
+    .footer{
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .footer-1 h6{
+        font-size:12px;
+    }
+    .footer-2 h6{
+        font-size:12px; 
+    }
+    .to-top{
+        right:5px;
+        bottom:5px;
+    }
+}
+@media(max-width:768px){
+    .to-top{
+        right:8px;
+        bottom:5px;
+    }
+}
+
+/* responsive part end here */

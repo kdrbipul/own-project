@@ -12,3 +12,11 @@ body{
     margin:0 auto;
     border:1px solid gray;
 }
+
+
+@media (max-width:480px) {
+    .underline{
+        margin:0 auto;
+        width:90%;
+    }
+}
