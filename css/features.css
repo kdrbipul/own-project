@@ -292,6 +292,9 @@
         align-items: center;
         gap:15px;
     } */
+    .overlay_title{
+        flex-direction: column;
+    }
 }
 @media(max-width:768px){
     .features{
@@ -310,6 +313,9 @@
     .features_btn{
         width:70%;
     }
+    .overlay_title{
+        flex-direction: column;
+    }
 
 }
 @media(max-width:480px){
@@ -318,6 +324,9 @@
     }
     .features_btn{
         width:100%;
+    }
+    .overlay_title{
+        flex-direction: column;
     }
 }
 /* @media(min-width:226px){

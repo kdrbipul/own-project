@@ -27,3 +27,13 @@ html{
 /* .container{
     max-width: 1100px !important;
 } */
+
+
+/* responsive part start here */
+@media (max-width:1100px){
+    html{
+        overflow-x: hidden;
+    }
+}
+
+/* responsive part end here */

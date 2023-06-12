@@ -1,0 +1,30 @@
+.services_catagories-1{
+    max-width:300px;
+    background-color: rgba(25, 25, 112, 0.158);
+}
+.services_card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* opacity:0; */
+    
+
+}
+.services_card:hover{
+    /* opacity:1; */
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.services_catagories{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 70px;
+}
+
+
+/* responsive part start here */
+@media (max-widht:992px){
+    .services_catagories{
+        grid-template-columns: repeat(2, 1fr );
+    }
+}
+
+/* responsive part end here */
