@@ -47,6 +47,9 @@
     border-radius:50%;
     animation:animate 1s linear infinite;
     transition:animate 1s linear;
+    overflow: hidden;
+    margin-top:150px;
+
 }
 @keyframes animate {
     from{
@@ -106,8 +109,121 @@
 
 /* features people part start here */
 
+.team-box
+{
+    cursor: pointer;
+    border-radius: 5px !important;
+    margin-top:150px;
+}
 
+.team-box:hover .social-icon a:first-child
+{
+    transform: translateY(25px);
+    opacity: 1;
 
+}
+
+.team-box:hover .social-icon a:nth-child(2)
+{
+    transform: translateY(25px);
+    opacity: 1;
+
+}
+
+.team-box:hover .social-icon a:nth-child(3)
+{
+    transform: translateY(25px);
+    opacity: 1;
+
+}
+
+.team-box:hover .social-icon a:last-child
+{
+    transform: translateY(25px);
+    opacity: 1;
+
+}
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+.overlay {
+  position: absolute; 
+  bottom:0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition:  .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+    bottom:0;
+    opacity: 1;
+}
+.social_icon a{
+    text-decoration:none;
+    background-color:black;
+    color:white;
+}
+.social-icon a:first-child
+{
+    background-color: #3b5998;
+    transition: .80s;
+    opacity: 0;
+}
+
+.social-icon a:nth-child(2)
+{
+    background-color: #00acee;
+    transition: .60s;
+    opacity: 0;
+}
+
+.social-icon a:nth-child(3)
+{
+    background-color:  #db4a39;
+    transition: .40s;
+    opacity: 0;
+}
+
+.social-icon a:last-child
+{
+    background-color: #0072b1;
+    transition: .20s;
+    opacity: 0;
+}
+
+.social-icon a:hover
+{
+    background-color: white;
+    color: #333;
+
+}
+.image{
+    width:350px;
+    height:auto;
+}
+
+.features_article h2{
+    color:white;
+}
+.overlay_title{
+    display:flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: space-between;
+    align-items: center;
+}
+.features_article{
+    text-align:center;
+}
 /* features people part end here */
 
 
@@ -117,11 +233,22 @@
         margin-left:0px;
     }
     .features_btn{
-        width:50%;
+        width:100%;
     }
     /* .mid_img img{
         width: 700px;
     } */
+    .overlay_title{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        /* gap:15px; */
+    }
+}
+@media(max-width:1100px){
+    .features_btn{
+        width:100%;
+    }
 }
 @media(max-width:992px){
     .features-2{
@@ -146,8 +273,16 @@
         top:0;
         left:0;
     }
+    .features_btn{
+        width:70%;
+    }
     /* .mid_img img{
         width: 700px !important;
+    } */
+    /* .overlay_title{
+        justify-content: space-evenly;
+        align-items: center;
+        gap:15px;
     } */
 }
 @media(max-width:768px){
@@ -164,11 +299,17 @@
         text-align:center;
         margin-bottom:20px;
     }
+    .features_btn{
+        width:70%;
+    }
 
 }
 @media(max-width:480px){
     .mid_img img{
         width: 300px !important;
+    }
+    .features_btn{
+        width:100%;
     }
 }
 /* @media(min-width:226px){
