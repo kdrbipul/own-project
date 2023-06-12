@@ -227,29 +227,37 @@
 /* features people part end here */
 
 
+/* features content part star here */
+.features_content{
+   max-width: 700px;
+   margin:auto;
+}
+/* features content part end here */
+
+
 /* responsive part start here */
-@media(max-width:1280px){
+/* @media(max-width:1280px){
     .features-2{
         margin-left:0px;
     }
     .features_btn{
         width:100%;
     }
-    /* .mid_img img{
+    .mid_img img{
         width: 700px;
-    } */
+    }
     .overlay_title{
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
-        /* gap:15px; */
+        justify-content: center;
+        align-items: center;
+        gap:15px;
     }
-}
-@media(max-width:1100px){
+} */
+/* @media(max-width:1100px){
     .features_btn{
         width:100%;
     }
-}
+} */
 @media(max-width:992px){
     .features-2{
         margin-left:0px;
