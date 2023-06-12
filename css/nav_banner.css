@@ -1,4 +1,6 @@
 
+/* nav_banner part start here */
+
 .nav_banner{
     display:flex;
     /* grid-template-columns: repeat(2, 1fr); */
@@ -72,6 +74,9 @@
     background-image:conic-gradient(transparent,transparent,transparent , #00ccff);
     animation: animate 4s linear infinite; 
 }
+/* nav_banner part end here */
+
+/* nav_banner-icon part start here */
 
 .nav_icon-lower{
     background:tomato;
@@ -95,11 +100,13 @@
 }
 .icon_catagories{
     display:flex;
-    justify-content: space-around;
+    /* grid-template-columns:repeat(3, 1fr) ; */
+    justify-content: space-between;
     align-items: center;
     margin:50px 0;
 }
 
+/* nav_banner-icon part end here */
 
 
 
@@ -141,6 +148,12 @@
     }
     .icon_catagories{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* text-align:center; */
+    }
+    .fa-solid{
+        margin: 0 auto;
     }
 }
 @media (max-width:768px){
@@ -189,5 +202,8 @@
     .nav_banner-left .clip-path img{
         margin-bottom:15px;
     }
+    /* .icon_catagories{
+        grid-template-columns: repeat(3, 1fr);
+    } */
 }
 /* responsive part ebd here */

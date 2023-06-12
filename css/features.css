@@ -22,7 +22,7 @@
     display:flex;
     flex-direction: column;
     gap:25px;
-    margin-left:-260px;
+    margin-left:-220px;
 }
 .features-3 h3{
     color:white;
@@ -45,8 +45,8 @@
     background: rgb(51,204,255);
     background: linear-gradient(90deg, rgba(51,204,255,1) 0%, rgba(255,0,102,1) 35%, yellow);
     border-radius:50%;
-    animation:animate 0.5s linear infinite;
-    transition:animate .5s linear;
+    animation:animate 1s linear infinite;
+    transition:animate 1s linear;
 }
 @keyframes animate {
     from{
@@ -78,53 +78,51 @@
 .circle span:nth-child(4){
     filter:blur(20px);
 }
-.mid_img{
+/* .mid_img{
     position:relative; 
-}
-.mid_img img{
+} */
+/* .mid_img img{
     width: 1200px !important;
-}
+} */
 .animation{
     position:absolute;
     justify-content: center;
     align-items:center;
+    float:left;
+    display:flex;
 }
 .features_down{
     display:flex;
     justify-content: space-between;
     align-items: center;
+
+}
+.last_img{
+    display:flex;
+    float:right;
 }
 /* features_down part end here */
 
 
 /* features people part start here */
-.features_people img {
-    display: block;
-    /* width: 100%;
-    height: auto; */
-  }
-  
-  /* .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); 
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  } */
-  
-  .container:hover .overlay {
-    opacity: 1;
+
+
+
 /* features people part end here */
 
 
 /* responsive part start here */
+@media(max-width:1280px){
+    .features-2{
+        margin-left:0px;
+    }
+    .features_btn{
+        width:50%;
+    }
+    /* .mid_img img{
+        width: 700px;
+    } */
+}
 @media(max-width:992px){
     .features-2{
         margin-left:0px;
@@ -148,9 +146,9 @@
         top:0;
         left:0;
     }
-    .mid_img img{
-        width: 900px !important;
-    }
+    /* .mid_img img{
+        width: 700px !important;
+    } */
 }
 @media(max-width:768px){
     .features{
@@ -168,4 +166,14 @@
     }
 
 }
+@media(max-width:480px){
+    .mid_img img{
+        width: 300px !important;
+    }
+}
+/* @media(min-width:226px){
+    .mid_img img{
+        width: 150px !important;
+    }
+} */
 /* responsive part end here */
